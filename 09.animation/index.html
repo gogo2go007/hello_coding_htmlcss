@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션 css속성</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .test_wrap{position: relative; width: 200px; margin: 100px auto;}
+        .test1{width: 200px; height: 200px; background-color: aqua;
+        animation-name: rotate_move;
+        animation-duration:8s;
+        animation-iteration-count: infinite;
+        animation-delay: 3s;
+        animation-timing-function: linear;}
+        @keyframes rotate_move{
+            0%{transform: rotate(0deg);}
+            50%{transform: rotate(90deg);}
+            100%{transform: rotate(180deg);}
+        }
+
+        .test1-text{position: absolute; top: 50%; left:50%; transform: translate(-50%, -50%); font-size: 20px;
+        font-weight: bold;
+        animation-name: text_show;
+        animation-duration:2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;}
+        @keyframes text_show{
+            0%{opacity: 1; font-size: 20px; color: red;}
+            100%{opacity: 0; font-size: 25px; color: #000;}
+        }
+
+        .test1-circle{position: absolute; top: 20px; left: 20px; width: 30px; height: 30px; border-radius: 50%; 
+            background-color: green;
+            animation: circle_move 3s infinite ;}
+            /* 이름 진행초수 반복횟수 */
+        @keyframes circle_move{
+            0%{top:20px; left: 20px; transform: scale(1);}
+            25%{top:20px; left: 150px; transform: scale(1.5);}
+            50%{top:150px; left: 150px; transform: scale(1);}
+            75%{top:150px; left: 20px; transform: scale(1.5);}
+            100%{top:20px; left: 20px; transform: scale(1);}
+        }
+
+        .circle_wrap{width: 600px; height: 600px; border-radius: 50%; position: relative; margin: 100px auto;}
+        .big{width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 50%; border: 1px dashed #000;
+            animation: rotate 50s infinite linear; }
+        @keyframes rotate{
+            0%{transform: rotate(0deg);}
+            100%{transform: rotate(360deg);}
+        }   
+        
+        .small{ width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 50%;
+                animation: rotate2 50s infinite linear;}
+        @keyframes rotate2{
+            0%{transform: rotate(0deg);}
+            100%{transform: rotate(-360deg);}
+        }
+        
+        .small_circle{width: 25px; height: 25px; border-radius: 50%; background-color: #000; 
+            position: absolute; top: -12px; left: 50%; transform: translateX(-50%);}
+
+
+    </style>
+</head>
+<body>
+   <div class="test_wrap">
+       <div class="test1"></div>
+       <div class="test1-text">깜빡깜빡</div>
+       <div class="test1-circle"></div>
+   </div>
+   <div class="circle_wrap">
+       <div class="big"></div>
+       <div class="small">
+           <div class="small_circle"></div>
+       </div>
+   </div>
+
+</body>
+</html>

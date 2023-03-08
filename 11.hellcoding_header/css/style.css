@@ -1,0 +1,77 @@
+@charset "UTF-8";
+* {margin: 0; padding: 0; box-sizing: border-box;}
+a {text-decoration: none;}
+ol,ul,li { list-style: none;}
+img video{ vertical-align: top;}
+body {line-height: 1; font-size: 13px;}
+
+.hide {position: absolute; clip: rect(0 0 0 0); width: 1px; height: 1px; margin: -1px; overflow: hidden;}
+
+#header {display: flex; justify-content: center; position: fixed; top: 0; width: 100%; transition: all 0.5s;}
+#header .center {width: 1280px; display: flex; justify-content: space-between; align-items: center;}
+#header h1 {width: 123px; padding: 40px 0 30px;}
+#header h1 > a {display: block; height: 22px; background: url(../img/logo_w.png) no-repeat center / cover;}
+
+.gnb_wrap {height: 100%;}
+.gnb_wrap .gnb_bg {width: 100%; height: 160px; position: absolute;  top: 92px; left: 0;background-color: #fff; display: none;}
+.gnb_wrap:hover .gnb_bg {display: block;}
+.gnb_bg .bg_blue {position: absolute; top: 0; left: 0; width: 29%; height: 100%; background-color: #10069f;}
+.gnb_bg .sub_title {width: 1280px; height: 100%; margin: 0 auto; position: relative; }
+.gnb_bg .sub_title > li {color: #fff; font-size: 25px; position: absolute; top: 30px; left: 0; display: none;}
+.gnb_bg .sub_title > li.on {display: block;}
+.gnb_bg .sub_title > li span {font-size: 15px; display: block; margin-top: 10px;}
+
+.gnb {display: flex; align-items: center; height: 100%;}
+.gnb .menu {padding: 0 50px; height: 100%; position: relative; text-align: center;}
+.gnb .menu > a {display: block; width: 100%; height: 100%; font-size: 18px; padding-top: 42px; color: #fff; position: relative;}
+.gnb .menu .depth2 {position: absolute; top: 92px; left: 50%; transform: translateX(-50%); width: 100%; padding: 20px 0; display: none;}
+.gnb .menu .depth2 > li > a {display: block; width: 100%; height: 100%; line-height: 30px; font-size: 16px; color: #333;}
+.gnb .menu .depth2 > li > a:hover {text-decoration: underline;}
+
+
+#header .icn_wrap {display: flex;}
+#header .icn_wrap > li {margin-left: 10px; width: 24px; height: 24px;}
+#header .icn_wrap > li > a {display: block; height: 100%;}
+#header .icn_wrap > li:nth-child(1) > a {background: url(../img/ico_cart_w.png) no-repeat center / 100%;}
+#header .icn_wrap > li:nth-child(2) > a {background: url(../img/ico_like_w.png) no-repeat center / 100%;}
+#header .icn_wrap > li:nth-child(3) > a {background: url(../img/icon_lang_w.png) no-repeat center / 100%;}
+
+
+
+/* header에 마우스 올렸을 때 배경색, 글씨색, 로고, 아이콘 변경  */
+#header:hover {background: #fff;}
+#header:hover h1 > a { background: url(../img/logo_bk.png) no-repeat center / cover;}
+#header:hover .gnb .menu > a {color: #333;}
+#header:hover .icn_wrap > li:nth-child(1) > a {background: url(../img/ico_cart_bk.png) no-repeat center / 100%;}
+#header:hover .icn_wrap > li:nth-child(2) > a {background: url(../img/ico_like_bk.png) no-repeat center / 100%;}
+#header:hover .icn_wrap > li:nth-child(3) > a {background: url(../img/icon_lang_bk.png) no-repeat center / 100%;}
+
+
+
+/* gnb > menu메뉴에 마우스 올렸을때 */
+.gnb .menu:hover > a::after {content: ""; display: block; width: 100%; height: 3px; background-color: #10069f; position: absolute; bottom: 0;}
+.gnb .menu:hover .depth2 {display: block;}
+
+
+/* header.on */
+#header.on {background-color: #f3f1e4;}
+#header.on h1 {padding: 25px 0;}
+#header.on h1 > a {background: url(../img/logo_bk.png) no-repeat center / cover;}
+#header.on .gnb_wrap .gnb_bg {top: 72px}
+#header.on .gnb .menu > a {color: #333; padding-top: 27px;}
+#header.on .gnb .menu .depth2 {top: 72px;}
+#header.on .icn_wrap > li:nth-child(1) > a {background: url(../img/ico_cart_bk.png) no-repeat center / 100%;}
+#header.on .icn_wrap > li:nth-child(2) > a {background: url(../img/ico_like_bk.png) no-repeat center / 100%;}
+#header.on .icn_wrap > li:nth-child(3) > a {background: url(../img/icon_lang_bk.png) no-repeat center / 100%;}
+
+/* header.top */
+#header.top {top: -92px;}
+
+@media screen and (max-width:1600px) {
+    
+}
+
+#container .cont1 {width:100%; height: 100vh; background: url(../img/visual01.jpg) no-repeat center center / cover;}
+#container .cont2 {width:100%; height: 100vh; background: url(../img/visual02.png) no-repeat center center / cover;}
+#container .cont3 {width:100%; height: 100vh; background: url(../img/visual03.png) no-repeat center center / cover;}
+#container .cont4 {width:100%; height: 100vh; background: url(../img/visual04.png) no-repeat center center / cover;}

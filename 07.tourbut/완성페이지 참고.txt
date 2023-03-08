@@ -1,0 +1,3 @@
+http://gagaclub.dothome.co.kr/tourbud
+
+완성 페이지(로그인, 회원가입으로 이동 가능)

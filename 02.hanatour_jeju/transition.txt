@@ -1,0 +1,17 @@
+transition-property
+요소에 추가할 전환효과의 적용 속성을 지정한다.
+
+transition-duration
+트랜지션의 진행시간, 지속시간을 지정한다.초 s / 밀리초ms 사용 
+
+transition-timing-function
+전환효과의 변화되는 속도 값(속도 변화 유형)을 설정
+- linear: 처음부터 끝까지 일정한 속도
+- ease: 천천히, 빠르게, 천천히 (기본값)
+- ease-in-out 느리게 시작하고 느리게 끝냄 
+- ease-out 느리게 끝남
+- ease-in 느리게 시작
+-cubic-bezier(n,n,n,n) n값은 0~1 사이만 사용 가능
+
+transition-delay
+움직이기 전 트랜지션 효과의 대기시간 설정한다. 초 s / 밀리초ms 사용 

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 태그 기본 문법</title>
+    <style>
+        * {margin: 0; padding: 0; border: 1px solid #999;}
+        table {border-collapse: collapse;}
+        /*border-collapse 속성은 테이블 안에 있는 칸과 칸 사이 간격 지정하는 속성
+          boeder-collapse 속성은 기본값이 separate (칸과 칸 사이 분리해서 표시)
+          border-collapse 속성을 collapse (칸과 칸 사이가 붙어있는 상태로 표시되기 때문에 css reset 시 해당 값을 지정함)
+          table 태그에 있는 칸에 한해서만 테두리선이 이중으로 안뜸
+        */
+        span {border: none;}
+    </style>
+</head>
+<body>
+    <table class="tbl">
+        <caption>표의 제목</caption>
+        <colgroup>
+            <col width="300px">
+            <col width="300px">
+            <col width="300px">
+            <col width="300px">
+        </colgroup>
+        <tr>
+            <th colspan="2">구분</th>
+            <!-- 칸병합 -->
+            <th>주중</th>
+            <th>주말</th>
+        </tr>
+        <tr>
+            <td rowspan="4">그린피</td>
+            <td>정회원</td>
+            <td>60,000<span>원</span></td>
+            <td>65,000<span>원</span></td>
+        </tr>
+        <tr>
+            <!--  칸 병합 -->
+            <td>가족회원</td>
+            <td>60,000<span>원</span></td>
+            <td>150,000<span>원</span></td>
+        </tr>
+        <tr>
+            <!--  칸 병합 -->
+            <td>지명회원</td>
+            <td>80,000<span>원</span></td>
+            <td>210,000<span>원</span></td>
+        </tr>
+        <tr>
+            <!--  칸 병합 -->
+            <td>비회원</td>
+            <td>150,000<span>원</span></td>
+            <td>210,000<span>원</span></td>
+        </tr>
+        <tr>
+            <td colspan="2">카트사용료</td>
+            <!-- 칸 병합 -->
+            <td colspan="2">800,000<span>원</span></td>
+            <!-- 칸 병합 -->
+        </tr>
+        <tr>
+            <td colspan="2">보조원봉사료</td>
+            <!-- 칸 병합 -->
+            <td colspan="2">120,000<span>원(팀당)</span></td>
+            <!-- 칸 병합 -->
+        </tr>
+        <tr>
+            <td colspan="2">대여료</td>
+            <!-- 칸 병합 -->
+            <td colspan="2"><span>골프화,퍼터</span>10,000<span>원</span><span>대여클럽</span>50,000<span>원</span></td>
+            <!-- 칸 병합 -->
+        </tr>
+        
+    </table>
+</body>
+</html>

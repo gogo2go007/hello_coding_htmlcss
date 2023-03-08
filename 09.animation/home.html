@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        body{width: 100%; height: 100%; animation: sky 20s linear infinite;}
+
+        .section{width: 1000px; height: 400px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-70%);}
+        .sky{position: absolute; width: 100%; height: 100%; }
+        .sky .sun{position: absolute; }
+
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="sky">
+            <img src="img/sun.png" class="sun">
+            <img src="img/cloud1.png" class="cloud1">
+            <img src="img/cloud2.png" class="cloud2">
+        </div>
+        <div class="town">
+            <img src="img/town_day.png" class="day">
+            <img src="img/town_night.png" class="night">
+            <img src="img/circle.png" class="circle">
+        </div>
+        <div class="people">
+            <img src="img/man.png" class="man">
+            <img src="img/family.png" class="family">
+        </div>
+        <h1>Have a Good Day!!</h1>
+    </div>   
+</body>
+</html>

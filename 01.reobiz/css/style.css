@@ -1,0 +1,109 @@
+* {margin: 0; padding: 0;}
+a {text-decoration: none;}
+img {vertical-align: top;}
+ul,ol,li {list-style: none;}
+body {line-height: 1; font-family: 'Poppins', sans-serif;}
+.clear-fix::after {content: ""; display: block; clear:both}
+
+/* header */
+#header .center {width: 1200px; margin: 0 auto;}
+#header .center .logo {float: left; margin: 43px 160px 43px 15px;}
+#header .center .gnb {float: left;}
+#header .center .gnb li {float: left; line-height: 115px; margin-right: 57px;}
+#header .center .gnb li a {color: #000; font-size: 15px; font-weight: 500;}
+#header .center .gnb li a span {color: #1a6eea; }
+/* header */
+
+/* container */
+.aboutus {width: 1200px; margin: 0 auto; margin-top: 70px; color: #1c1b1b;}
+.aboutus .l-img {float: left;}
+.aboutus .r-text {float: left; margin-left: 65px;}
+.aboutus .r-text h2 {font-size: 16px; font-weight: 500;
+                     margin-bottom: 15px; color: #1a6eea;}
+.aboutus .r-text h3 {font-size: 36px; font-weight: 700; 
+                     line-height: 40px; margin-bottom: 53px;}
+.aboutus .r-text .t-group {margin-bottom: 40px;}
+.aboutus .r-text .t-group h4 {font-size: 20px; font-weight: 700;
+                              margin-bottom: 17px;}
+.aboutus .r-text .t-group p {font-size: 16px; font-weight: 400;
+                             line-height: 27px; font-family: 'Roboto', sans-serif;} 
+
+.services {width: 1200px; margin: 100px auto 151px;
+           text-align: center; color: #1c1b1b;}
+.services h2 {font-size: 16px; font-weight: 500; color: #1a6eea;
+              margin-bottom: 23px;}
+.services h3 {font-size: 36px; font-weight: 700; margin-bottom: 45px;}
+.services .s-list {width: 280px; margin:8px; float: left;
+                   background-color: #f1f6fc;
+                   padding: 31px 0; border-radius: 4px;}
+.services .s-list h4 {font-size: 18px; font-weight: 700; margin: 30px 0 17px;}
+.services .s-list p {font-size: 16px; font-weight: 400; line-height: 27px;
+                     font-family: 'Roboto', sans-serif;}
+
+.review {background-color: #f1f6fc; padding: 100px 0 200px; color: #1c1b1b;
+         font-family: 'Roboto', sans-serif;}
+.review .center {width: 1170px; margin: 0 auto;}
+.review .center .t-center {text-align: center;}
+.review .center .t-center h2 {font-size: 16px; font-weight: 500; color: #1a6eea;
+                              margin-bottom: 23px;}
+.review .center .t-center h3 {font-size: 36px; font-weight: 700;
+                              margin-bottom: 61px;}
+.review .center .c-box .l-img {float: left;}
+.review .center .c-box .r-text {width: 585px; float: left; text-align: center;
+                                background-color: #fff; padding: 135px 0 124px;}
+.review .center .c-box .r-text p {font-size: 18px; font-weight: 400; 
+                                  font-style: italic; line-height: 34px;
+                                  margin-bottom: 30px;}
+.review .center .c-box .r-text img {width: 65px; border-radius: 50%;}
+/* 이미지를 동그라미로 표현할때는 이미지 사이즈의 절반 사이즈px로 표현하거나 50%로... 
+   정사각형일 경우가 가장 효과적이다. */
+.review .center .c-box .r-text h4 {font-size: 20px; font-weight: 500;
+                                   margin:24px 0 18px;}
+.review .center .c-box .r-text span {font-size: 16px; font-weight: 400;}
+
+.expeople {width: 1200px; margin: 0 auto; color: #1c1b1b;}
+.expeople .t-center {text-align: center;}
+.expeople .t-center h2 {font-size: 16px; font-weight: 500; color: #1a6eea;
+                        margin: 100px 0 23px;}
+.expeople .t-center h3 {font-size: 36px; font-weight: 700; margin-bottom: 23px;}
+.expeople .t-center p {font-size: 16px; font-weight: 400; line-height: 26px;
+                       margin-bottom: 60px; font-family: 'Roboto', sans-serif;}
+
+.expeople .t-list {width: 270px; margin: 0 15px; float: left; 
+                   border-radius: 4px 4px 0 0; 
+                   overflow: hidden; }
+.expeople .t-list .m-intro {background-color: #f1f6fc;
+                            padding: 33px 0 31px; text-align: center;}
+.expeople .t-list .m-intro h4 {margin-bottom: 17px; font-size: 20px; font-weight: 700;
+                               font-family: 'Roboto', sans-serif;}
+.expeople .t-list .m-intro p {font-size: 16px; font-weight: 400;
+                              font-family: 'Roboto', sans-serif;}
+
+.news {width: 1200px; margin: 0 auto; margin-top: 100px; color: #1c1b1b;}
+.news .t-center div {float: left; margin-left: 15px;}
+.news .t-center div h2 {font-size: 16px; font-weight: 500; color: #1a6eea;
+                        margin-bottom: 21px;}
+.news .t-center div h3 {font-size: 36px; font-weight: 700;
+                        margin-bottom: 61px;}
+.news .t-center .update {float: right; margin-right: 15px;
+                         width: 172px; height: 57px; 
+                         background-color: #1a6eea;
+                         color: #fff; font-size: 16px; font-weight: 500;
+                         line-height: 57px; text-align: center;
+                         border-radius: 2px;}
+.news .up-list {width: 370px; margin: 0 15px; float: left; }
+.news .up-list .m-intro {padding: 41px 0px 81px 30px;}
+.news .up-list .m-intro h4 {font-size: 15px; font-weight: 400; margin-bottom: 16px;}
+.news .up-list .m-intro p {font-size: 20px; font-weight: 600; line-height: 32px;}
+
+/* container */
+
+/* footer */
+.copyright {background-color: #101010;}
+.copyright .center {width: 1170px; margin: 0 auto; padding: 38px 0 31px;}
+.copyright .center p {float: left; color: #e0e0e0;
+                      font-size: 16px; font-weight: 400;
+                      font-family: 'Roboto', sans-serif;}
+.copyright .center ul {float: right;}
+.copyright .center ul li {float: left; margin-right: 10px;}
+/* footer */

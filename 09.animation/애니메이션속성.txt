@@ -1,0 +1,34 @@
+<애니메이션속성>
+- animation-name: 부드럽게 동작할 애니메이션 동작들을 포함하고 있는 이름 지정(내가 직접 지정) 
+- animation-duration: 애니메이션 동작의 진행 초수. 숫자값s 10s 20s 30s 등등
+- animation-iteration-count:  애니메이션 동작의 반복횟수. 숫자로 적을때는 단위 생략해야 한다. 무한대는 infinite
+- animation-delay: 애니메이션 딜레이 초수 (지연 시간) 숫자값s 5s 10s....
+- animation-fill-mode: 애니메이션이 종료되고 나서 몇 초 구간으로 위치할 건지..
+                            backward 는 0% 구간에서 정지
+                            forward 는 100% 구간에서 정지
+                            애니메이션이 종료되고 나오는 것이기 때문에 animation-iteration-count: 랑 같이 사용하지 않는다.
+- animation-timing-function:linear  애니메이션 가속도 설정 / linear는 계속 같은 속도를 유지하면서 움직이는 것
+
+
+
+* 애니메이션 동작 이름 설정 -> 한글 안됨 숫자먼저 시작하지 말 것  특수문자는 - _ 만 가능
+
+* animation-timing-function 가속 감속 운동  
+  기본값 ease 효과가 천천히 시작되어 점점 빨라졌다가 마지막에는 다시 느려짐
+  linear 처음부터 끝까지 일정한 속도로 움직임
+  ease-in 애니메이션 효과가 천천히 시작되면서 끝으로갈수록 빠르게 끝남
+  ease-out 애니메이션 효과가 빠르게 시작되면서 끝을로갈수록 느리게 끝남
+  ease-in-out 애니메이션 효과가 천천히 시작되면서 마지막에는 천천히 끝남
+
+
+* animation-direction  애니메이션 진행방향 alternate 0%부터 100%까지 갔다가 다시 100%에서 0%으로 돌아감
+  reverse 100% -> 0%
+  alternate-reverse  100% -> 0%   0% -> 100% 
+  지정이 안되있는 상태면 normal 기본값 0% -> 100%   0% -> 100% 
+
+* animation-play-state 애니메이션 재생 상태 (멈추게 할것인가) (계속 재생되게 할것인가)*
+
+
+* 줄여쓰기
+animation: circle-move 3s infinite;
+                    이름 진행초수 반복횟수

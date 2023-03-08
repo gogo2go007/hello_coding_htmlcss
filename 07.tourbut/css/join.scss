@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+html, body{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.head{
+    width: 100%;
+    >.head_wrap{
+        max-width: 1200px;
+        margin: 0 auto;
+        >.head_top{
+            width: 100%;
+            display: flex;
+            margin: 30px 0;
+            >.head_sns{
+                width: 100%;
+               >ul{
+                    display: flex;
+                    >li{
+                        margin-right: 10px;
+                    }
+                }
+            }
+            >.head_logo{
+                width: 100%;
+            }
+        }
+    }
+    >.nav{
+        width: 100%;
+        border-top: solid 1px #eee;
+        border-bottom: solid 1px #eee;
+        >.nav_wrap{
+            max-width: 1200px;
+            margin: 0 auto;
+            >ul{
+                display: flex;
+                justify-content: space-between;
+                >li{
+                    padding: 20px 30px 20px 0;
+                    >a{
+                    color: #717171;
+                    text-decoration: none;
+                    font-weight: bold;
+                    }
+                    &:hover a{
+                        font-weight: bold;
+                        color: #333;
+                    }
+                }
+                &:last-child{padding-right: 0;}
+            }
+        }
+    }
+}
+.container{
+    >.container_wrap{
+        max-width: 1200px;
+        margin: 0 auto;
+        >.title_box{
+            margin-top: 120px;
+            text-align: center;
+            border-bottom: 1px solid #eee ;
+            >h2{
+                font-size: 30px;
+                font-weight: bold;
+                margin-bottom: 21px;
+            }
+            >h3{
+               font-size: 24px;
+               margin-bottom: 20px;
+               font-weight: 400; 
+            }
+            >p{
+                font-size: 17px;
+                margin-bottom: 27px;
+                font-weight: bold;
+            }
+        }
+        >.join_rule{
+           >h3{
+               font-size: 30px;
+               margin: 30px 0 15px 5px;
+           }
+           >textarea{
+               width: 100%;
+               height: 80px;
+               border: 1px solid #eee;
+               padding-left: 13px;
+               font-family: 'Nanum Gothic', sans-serif;
+               line-height: 30px;
+           }
+           >#join{
+               font-size: 13px;
+               font-weight: bold;
+           }
+        }
+        >.inform{
+            >form{}
+        }
+    }
+}
+
+

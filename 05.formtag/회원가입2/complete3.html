@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>로그인 디자인</title>
+	<style>
+		* { margin:0; padding:0; box-sizing:border-box;}
+		ul,ol,li { list-style:none;}
+		img { vertical-align:top;}
+		a { text-decoration:none;}
+		input { outline: none;}
+
+		body { background-image:url("img/bg.jpg"); background-repeat:no-repeat; background-position:center center; background-size:cover;}
+
+		.login_center { width:600px; height:600px; padding:50px; margin:70px auto; background-color:rgba(0,0,0,0.9); position: relative;}
+
+		.icon { width:100px; height:100px; position: absolute; top:-50px; left:50%; transform:translateX(-50%);}
+		.icon img { width:100%;}
+
+		.login_center h2 { text-align:center; margin-top:20px; color:#fff;}
+
+		.input_box { margin-top:40px;}
+		.year_box { margin-top:40px;}
+		.input_box h3 { color:#fff; margin-bottom:10px;}
+		.year_box h3 {color:#fff; margin-bottom:10px;}
+
+		.input_box input[type="text"] { 
+			border:none; 
+			 width:100%; font-size:16px;
+			border-radius:5px; height:50px;
+			padding-left:10px;
+		}
+		.input_box input[type="text"]::placeholder {color:#000;}
+		.year_box input[type="text"]::placeholder {color:#000;}
+
+
+		#select { width:100%; height:50px; border-radius:5px; padding-left:10px;}
+
+		.btn { overflow: hidden; margin-top:30px;}
+
+		.hei { overflow: hidden;}
+		.hei > * { float:left; width:150px;  height:50px; border-radius:5px; border:none; margin-right:24px; padding-left:10px;}
+		.hei > input:last-child {margin-right:0;}
+
+		#submit { width:230px; border-radius:20px; background-color:hotpink; border:none;
+				  height:50px; color:#fff;  transition:all 0.5s;
+				  float:left;
+				  }
+
+		#submit:hover { background-color:pink;}
+
+		#reset { width:230px; border-radius:20px; background-color:deepskyblue; border:none;
+				  height:50px; color:#fff; transition:all 0.5s; float:right;}
+		#reset:hover { background-color:skyblue;}
+
+		.forget-pass {float:left;}
+		.forget-pass a{ font-weight:bold; color:#fff;}
+
+		.bot { overflow: hidden;  margin-top:30px; }
+		.email-save { color:#fff; float:right;}
+		#email { margin-right:5px; }
+	</style>
+</head>
+<body>
+		<div class="login_center">
+			<form method="GET" action="insert.php">
+				<div class="icon"><img src="img/icon.png"></div>
+				<h2>Register Here</h2>
+				<div class="login_cont">
+					<div class="input_box">
+						<h3><label for="id">이메일 주소</label></h3>
+						<input type="text" placeholder="이메일을 입력하세요" id="id" name="id">
+					</div>	
+					<div class="year_box">	
+						<h3><label for="pass2">생년월일</label></h3>
+						<div class="hei">
+							<input type="text" placeholder="년(4자)" id="birth" name="birth">
+							<select>
+								<option>월</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>10</option>
+								<option>11</option>
+								<option>12</option>
+							</select>
+							<input type="text" placeholder="일" id="birth2" name="birth2">
+						</div>	
+					</div>
+					<div class="input_box">
+						<h3><label for="select">성별선택</label></h3>
+						<select id="select">
+							<option>성별을 선택하세요</option>
+							<option>남성</option>
+							<option>여성</option>
+						</select>
+					</div>
+					<div class="btn">
+						<input type="submit" value="Sign In" id="submit">
+						<input type="reset" value="Reset" id="reset">
+					</div>
+				</div>
+			</form>
+		</div>
+</body>
+</html>

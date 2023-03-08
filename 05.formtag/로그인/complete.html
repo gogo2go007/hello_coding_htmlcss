@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>로그인 디자인</title>
+	<style>
+		* { margin:0; padding:0; box-sizing:border-box;}
+		ul,ol,li { list-style:none;}
+		img { vertical-align:top;}
+		a { text-decoration:none;}
+		input { outline: none;}
+
+		body { background-image:url("img/bg.jpg"); background-repeat:no-repeat; background-position:center center; background-size:cover;}
+
+		.login_center { width:500px; height:500px; padding:50px; margin:100px auto; background-color:rgba(0,0,0,0.5); position: relative;}
+
+		.icon { width:100px; height:100px; position: absolute; top:-50px; left:50%; transform:translateX(-50%);}
+		.icon img { width:100%;}
+
+		.login_center h2 { text-align:center; margin-top:20px; color:#fff;}
+
+		.input_box { margin-top:40px;}
+		.input_box h3 { color:#fff; margin-bottom:10px;}
+
+		.input_box input[type="text"] { 
+			border:none; border-bottom:1px solid #fff; background-color:transparent;
+			padding-bottom:10px; width:100%; color:#fff; font-size:16px;
+		}
+
+		.input_box input[type="password"] { 
+			border:none; border-bottom:1px solid #fff; background-color:transparent;
+			padding-bottom:10px; width:100%; color:#fff; font-size:16px;
+		}
+		
+		.input_box input[type="text"]::placeholder {color:#fff;}
+		.input_box input[type="password"]::placeholder {color:#fff;}
+
+		#submit { width:100%; border-radius:20px; background-color:hotpink; border:none;
+				  height:40px; color:#fff; margin-top:40px;}
+
+		.forget-pass { margin-top:30px;}
+		.forget-pass a{ font-weight:bold; color:#fff;}
+
+	
+		.email-save { color:#fff; margin-top:10px;}
+		#email { margin-right:5px; }
+	</style>
+</head>
+<body>
+		<div class="login_center">
+			<form method="GET" action="insert.php">
+				<div class="icon"><img src="img/user.png"></div>
+				<h2>Login Here</h2>
+				<div class="login_cont">
+					<div class="input_box">
+						<h3><lable for="email">Email</label></h3>
+						<input type="text" placeholder="Enter Email" id="email" name="email">
+					</div>	
+					<div class="input_box">	
+						<h3><lable for="pass">Password</label></h3>
+						<input type="password" placeholder="Enter Password" id="pass" name="pass">
+					</div>
+					<input type="submit" value="Sign In" id="submit">
+					<p class="forget-pass"><a href="#">Forget Password</a></p>
+
+					<p class="email-save">
+						<input type="checkbox" id="email"><label id="email">Email Save</label>
+					</p>
+				</div>
+			</form>
+		</div>
+</body>
+</html>

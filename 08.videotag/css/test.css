@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+html,
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.head {
+  width: 100%;
+  position: fixed;
+  background-color: #000;
+  padding: 30px 0;
+  z-index: 99;
+}
+
+.head > .head_wrap {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.head > .head_wrap > .head_nav > ul {
+  display: flex;
+}
+
+.head > .head_wrap > .head_nav > ul > li {
+  padding: 0 35px;
+}
+
+.head > .head_wrap > .head_nav > ul > li > a {
+  color: #fff;
+  font-size: 13px;
+}
+
+.head > .head_wrap > .head_nav > ul > li:hover a {
+  color: aquamarine;
+}
+
+.head > .head_wrap > .head_right {
+  text-align: center;
+}
+
+.head > .head_wrap > .head_right > a {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: #000;
+  color: #fff;
+  display: block;
+  font-size: 15px;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.head > .head_wrap > .head_right:hover a {
+  background-color: #fff;
+  color: mediumaquamarine;
+}
+
+
+.container >.con_nav{
+  position: fixed;
+  top: 50%;
+  right: 40px;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+
+.container >.con_nav>ul>li{
+  padding-bottom: 15px;
+}
+
+
+.container >.con_nav> ul> li> a{
+  font-size: 45px;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+.container >.con_nav> ul >li:hover a{
+  color: aquamarine;
+}
+
+.container > .cont1{
+  position: relative;
+  background-color: pink;
+  overflow: hidden;
+}
+
+.container > .cont1> .video_bg{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 77;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container > .cont1> video {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container > .cont1> .cont1_text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  z-index: 78;
+}
+.container > .cont1> .cont1_text > h3{
+  font-size: 45px;
+  color: #fff;
+  font-family: 'Bebas Neue';
+  padding-bottom: 10px;  
+}
+
+.container > .cont1> .cont1_text > h2{
+  font-size: 80px;
+  color: #fff;
+  font-family: 'Bebas Neue';
+  padding-bottom: 15px;
+}
+
+.container > .cont1> .cont1_text > p{
+  color: #fff;
+  line-height: 20px;
+  font-size: 13px;
+  padding-bottom: 30px;
+}
+
+.container > .cont1> .cont1_text > .com_btn > a{
+  display: inline-block;
+  width: 150px;
+  background-color: #fff;
+  color: aqua;
+  padding: 20px 35px;
+  border-radius: 10px;
+  border: 2px solid aqua;
+  transition: all 0.5s;
+}
+
+.container > .cont1> .cont1_text > .com_btn > a:hover{
+  color:#fff ;
+  border: aqua;
+  background-color: aquamarine;
+  border: 2px solid #fff;
+}
+
+.container > .content{
+  background-color: #1e1d32;
+}
+
+.container > .content > .content_wrap{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+.container > .content > .content_wrap h2{
+  color: #fff;
+  font-size: 60px;
+  font-family: 'Bebas Neue';
+  padding: 180px 0 80px 0;
+  text-align: center;
+}
+
+.container > .content > .content_wrap > .content_box{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(58, 57, 100);
+  width: 1170px;
+  border-radius: 15px;
+}
+
+.container > .content > .content_wrap > .content_box > .content_left{
+  margin: 92px 0 90px 93px;
+}
+
+.container > .content > .content_wrap > .content_box > .content_left > span{
+  font-size: 15px;
+  color: aqua;
+}
+
+.container > .content > .content_wrap > .content_box > .content_left > h3{
+  color: #fff;
+  font-family: 'Bebas Neue';
+  font-size: 35px;
+  padding: 20px 0 40px 0;
+}
+
+.container > .content > .content_wrap > .content_box > .content_left > p{
+  color: #96c6ec;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 52px;
+}
+
+.container > .content > .content_wrap > .content_box > .content_left > .content_btn >a{
+display: inline-block;
+width: 150px;
+background: rgb(112,34,195);
+background: linear-gradient(0deg, rgba(112,34,195,1) 11%, rgba(45,217,253,0.8267682072829132) 100%);
+padding: 25px 35px;
+border-radius: 15px;
+text-align: center;
+color: #fff;
+font-size: 16px;
+}
+
+
+.container > .content > .content_wrap > .content_box > .content_right{
+  margin: 105px 90px 105px 0;
+}
+
+.container > .content > .content_wrap > .content_box > .content_right > .content_img{
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.container > .content > .content_wrap > .content_box > .content_right > 
+.content_img > img{
+  object-fit: cover;
+}
+
+.tesimonial{
+  background-color: #1e1d32;
+  padding: 200px 0;
+}
+
+.tesimonial > .tesimonial_wrap{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.tesimonial > .tesimonial_wrap > .tesi_box{
+  background-color: #181728;
+  border-radius: 15px;
+  position: relative;
+}
+
+.tesimonial > .tesimonial_wrap > .tesi_box:first-child{
+  margin-right: 100px;
+}
+
+.tesimonial > .tesimonial_wrap > .tesi_box > .tesi_img{
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+  top: -90px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid #fff;
+}
+
+.tesimonial > .tesimonial_wrap > .tesi_box > .tesi_img > img{
+  width: 100%;
+  height: 100%;
+}
+
+.tesimonial > .tesimonial_wrap > .tesi_box > .test_text{
+  padding: 0 80px;
+}
+
+
+.tesimonial > .tesimonial_wrap > .tesi_box > .test_text > h2{
+  color: #fff;
+  font-size: 32px;
+  margin-top: 120px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.tesimonial > .tesimonial_wrap > .tesi_box > .test_text > span{
+  color: aqua;
+  font-size: 14px;
+  padding: 0 162px;
+}
+
+.tesimonial > .tesimonial_wrap > .tesi_box > .test_text > p{
+  color:#96c6ec ;
+  font-style: italic;
+  margin: 60px 0 80px;
+  font-size: 14px;
+  line-height: 27px;
+  text-align: center;
+}

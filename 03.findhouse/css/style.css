@@ -1,0 +1,129 @@
+* { margin:0; padding:0;}
+ul,ol,li { list-style:none;}
+a{ text-decoration:none;}
+img { vertical-align:top;}
+body { line-height:1; font-family: 'Nunito', sans-serif;}
+.clear_fix:after {content:""; display:block; clear:both;}
+
+.center {width: 1170px; margin: 0 auto;} 
+.center2 {width: 1140px; margin: 0 auto;} 
+.head {text-align: center;}
+.f-144 {font-size: 14px; font-weight: 400;}
+.f-163 {font-size: 16px; font-weight: 300; color: #484848;}
+.f-164 {font-size: 16px; font-weight: 400; color: #868686;}
+.f-187 {font-size: 18px; font-weight: 700;}
+.title {font-size: 30px; font-weight: 700; color: #484848;}
+.pd {padding: 65px 0 60px 0;}
+
+/* header 부분 시작 */
+#header .center .logo {float: left; margin: 24px 118px 24px 0;}
+#header .center .menu {float: left;}
+#header .center .menu li {float: left; margin: 45px 50px 35px 0;}
+#header .center .menu li:hover a {color: #ff5a5f;}
+#header .center .btn {width: 180px; height: 50px; float: right; color: #fff; 
+                      border-radius: 25px; background-color: #ff5a5f;
+                      text-align: center; line-height: 50px;
+                      margin: 24px 0 21px;}
+#header .center .btn:hover {background-color: #3e4c66;}
+/* header 부분 끝 */
+
+/* container 부분 시작 */
+/* container 1번 구역  */
+.featured {background-color: #f7f7f7; padding: 66px 0 116px;}
+.featured .head .title {margin-bottom: 16px;}
+.featured .head p {margin-bottom: 42px;}
+
+.featured .box .s-box {width: 358px; background-color: #fff; 
+                       float: left; margin: 0 15px;
+                       border:1px solid #ebebeb;
+                       border-radius: 8px;
+                       overflow: hidden;}
+.featured .box .s-box .top {border-bottom: 1px solid #ebebeb;}       
+.featured .box .s-box .top .t-img {width: 338px; height: 216px; margin: 10px auto 22px;
+                                   position: relative; 
+                                   overflow: hidden; border-radius: 8px;}            
+.featured .box .s-box .top .t-img img {transition: all 1s;}
+.featured .box .s-box:hover .top .t-img img {transform: scale(1.5);}
+.featured .box .s-box .top .t-img .bg {width: 100%; height: 100%; background: rgba(0, 1, 24, 0.3);
+                                       position: absolute; left: 0; top: 0px;} 
+                                       .featured .box .s-box:hover .top .t-img .bg {opacity: 0;}
+.featured .box .s-box .top .t-img .for p {width: 75px; height: 25px; background-color: #ff5a5f;
+                                          position: absolute; left: 25px; top: 20px;
+                                          border-radius: 4px; color: #fff; line-height: 25px;
+                                          text-align: center;}
+.featured .box .s-box .top .t-img .for .rent {background-color: #3e4c66;}
+.featured .box .s-box .top .t-img .for .rent2 {position: absolute; left: 110px; top: 20px;}
+.featured .box .s-box .top .t-img .price {font-size: 22px; font-weight: 700; color: #fff;
+                                          position: absolute; left: 29px; bottom: 17px;}
+
+.featured .box .s-box .top .context {margin-left: 20px;}
+.featured .box .s-box .top .context .apt {color: #ff5a5f;}
+.featured .box .s-box .top .context h4 {margin: 14px 0 13px 0; color: #484848;}
+.featured .box .s-box .top .context .text {margin-bottom: 60px; color: #484848;}
+
+.featured .box .s-box .bot img {margin: 20px 14px 20px 20px;}
+.featured .box .s-box .bot p {display: inline-block; color: #777; margin:35px 130px 35px 0;}
+.featured .box .s-box .bot span {display: inline-block; color: #777; }
+
+/* container 2번 구역 */
+.find .head h2 {margin-bottom: 16px;}
+.find .head p {margin-bottom: 55px;}
+
+.find .box .s-box {width: 360px; height: 350px; margin: 15px; border-radius: 10px;
+                   position: relative; float: left; overflow: hidden; }
+.find .box .s-box img {width: 100%; height: 100%; transition: all 0.5s;}
+.find .box .s-box:hover img {transform: scale(1.2);}
+.find .box .s-box h4 {background-color: rgba(0, 0, 0, 0.5);
+                      position: absolute; left: 0; bottom: 0px; width: 100%;
+                      color: #fff; text-align: center; transition: all 0.5s;
+                      padding: 25px 0 25px; line-height: 25px;}
+.find .box .s-box:hover h4 {background-color: rgba(255, 255, 255, 0.8); color: #000;}
+.find .box .b-box {width: 750px;} 
+
+/* container 3번 구역 */
+.why {background-color: #f7f7f7;}
+.why .head h2 {margin-bottom: 15px;}
+.why .head p {margin-bottom: 51px;}
+
+.why .box .s-box {width: 360px; background-color: #fff; border-radius: 8px;
+                  text-align: center; color: #484848; float: left; margin: 15px;}
+.why .box .s-box img {padding: 50px 0 53px;}
+.why .box .s-box h4 {margin-bottom: 16px;}
+.why .box .s-box p {padding-bottom: 47px; line-height: 23px;}
+
+/* container 4번 구역 */
+.our .head h2 {margin-bottom: 20px;}
+.our .head p {margin-bottom: 51px;}
+
+.our .center3 {width: 1046px; margin: 0 auto;}
+.our .symbol li {display: inline; margin-right: 137px;}
+.our .symbol .s-last {margin-right: 0;}
+
+/* container 5번 구역 */
+.become {background-color: #ff5a5f; padding: 55px 0 50px;}
+.become .left {float: left;}
+.become .left h2 {color: #fff; margin-bottom: 13px;}
+.become .left p {color: #fff;}
+
+.become .right {width: 200px; height: 60px; float: right; line-height: 60px;
+                background-color: #ff787c; color: #fff5f5;
+                border-radius: 8px; text-align: center;}
+.become .right:hover {background-color: #fff5f5;; color: #ff787c;}
+/* container 부분 끝 */
+
+/* bottom 부분 시작 */
+#bottom .f-144 {color: #8a99b3; }
+#bottom a:hover {color: #fff;}
+/* bottom 1번 구역 */
+.b-top {background-color: #24324a; padding: 82px 0 92px;}
+.b-top .list {float: left; margin-right: 100px;}
+.b-top h3 {color: #fff; margin-bottom: 38px;}
+.b-top .about h3 {margin-bottom: 30px;}
+.b-top .about p {line-height: 30px;}
+.b-top .mb {margin-bottom: 24px;}
+
+/* bottom 2번 구역 */
+.b-bot {background-color: #1d293e; padding: 49px 0 46px;}
+.b-bot .left {float: left; margin-right: 30px;}
+.b-bot .right {float: right;}
+/* bottom 부분 끝 */
